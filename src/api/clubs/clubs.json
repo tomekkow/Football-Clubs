@@ -1,0 +1,47 @@
+[
+  {
+    "clubId": 1,
+    "clubName": "Bayern Monachium",
+    "clubStadium": "Allianz Arena",
+    "clubStart": "27.02.1900",
+    "clubBudget": 262000000,
+    "starRating": 3.2,
+    "imageUrl": "../../assets/images/bayern.jpg"
+  },
+  {
+    "clubId": 2,
+    "clubName": "Chelsea Londyn",
+    "clubStadium": "Stamford Bridge",
+    "clubStart": "10.03.1905",
+    "clubBudget": 280000000,
+    "starRating": 4.2,
+    "imageUrl": "../../assets/images/chelsea.jpg"
+  },
+  {
+    "clubId": 3,
+    "clubName": "FC Barcelona",
+    "clubStadium": "Camp Nou",
+    "clubStart": "29.11.1899",
+    "clubBudget": 295000000,
+    "starRating": 4.8,
+    "imageUrl": "../../assets/images/fcbarcelona.png"
+  },
+  {
+    "clubId": 4,
+    "clubName": "Paris Saint Germain",
+    "clubStadium": "Parc des Princes",
+    "clubStart": "12.08.1970",
+    "clubBudget": 312000000,
+    "starRating": 3.7,
+    "imageUrl": "../../assets/images/psg.jpg"
+  },
+  {
+    "clubId": 5,
+    "clubName": "Real Madryt",
+    "clubStadium": "Santiago Bernabeu",
+    "clubStart": "06.03.1902",
+    "clubBudget": 268000000,
+    "starRating": 4.6,
+    "imageUrl": "../../assets/images/real.jpg"
+  }
+]
