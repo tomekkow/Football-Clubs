@@ -39,10 +39,9 @@
                [style.width.px]='imageWidth'
                [style.margin.px]='imageMargin'>
             </td>
-            <!-- <td><a [routerLink]="['/clubs', club.clubId]">
+            <td><a [routerLink]="['/clubs', club.clubId]">
               {{club.clubName}}</a>
-            </td> -->
-            <td>{{club.clubName}}</td>
+            </td>
             <td>{{club.clubStadium | lowercase | convertToSpaces: '-'}}</td>
             <td>{{club.clubStart}}</td>
             <td>{{club.clubBudget | currency:'Eur':'symbol':'1.2-2'}}</td>

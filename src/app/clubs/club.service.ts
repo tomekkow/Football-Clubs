@@ -1,9 +1,7 @@
 import { Injectable } from '@angular/core';
-import { HttpClient} from '@angular/common/http';
-import { Observable } from 'rxjs';
-import { catchError, tap } from 'rxjs/operators';
-import { HttpErrorResponse } from '@angular/common/http';
-import { throwError } from 'rxjs';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { Observable, throwError } from 'rxjs';
+import { catchError, tap, map } from 'rxjs/operators';
 
 import { IClubs } from './clubs';
 
@@ -16,12 +14,18 @@ export class ClubService {
 
 	constructor(private http: HttpClient){}
 
-	getProducts(): Observable<IClubs[]> {
+	getClubs(): Observable<IClubs[]> {
 		return this.http.get<IClubs[]>(this.clubUrl).pipe(
 			tap(data => console.log('All:' + JSON.stringify(data))),
 			catchError(this.handleError)
 			);
-	}
+  }
+
+  getClub(id: number): Observable<IClubs | undefined> {
+    return this.getClubs().pipe(
+      map((clubs: IClubs[]) => clubs.find(p => p.clubId === id))
+    );
+  }
 
 	private handleError(err: HttpErrorResponse){
 		let errorMessage = '';

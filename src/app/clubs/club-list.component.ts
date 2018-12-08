@@ -42,7 +42,7 @@ export class ClubListComponent implements OnInit{
         this.showImage = !this.showImage;
     }
     ngOnInit(): void {
-        this.clubService.getProducts().subscribe(
+        this.clubService.getClubs().subscribe(
             clubs => {
                 this.clubs = clubs;
                 this.filteredClubs = this.clubs;
